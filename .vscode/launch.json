@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "BullCowGame (Debug)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGame Mac Debug Build",
+			"program": "/Users/jomeke/TripleX 4.25/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGame (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGame Mac DebugGame Build",
+			"program": "/Users/jomeke/TripleX 4.25/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGame (Development)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGame Mac Development Build",
+			"program": "/Users/jomeke/TripleX 4.25/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGame (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGame Mac Shipping Build",
+			"program": "/Users/jomeke/TripleX 4.25/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGame (Test)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGame Mac Test Build",
+			"program": "/Users/jomeke/TripleX 4.25/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGameEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGameEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/jomeke/TripleX 4.25/BullCowGame.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGameEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGameEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/jomeke/TripleX 4.25/BullCowGame.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "BullCowGameEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "BullCowGameEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/jomeke/TripleX 4.25/BullCowGame.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/jomeke/TripleX 4.25/BullCowGame.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.25"
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BullCowGame",
+			"Path": "/Users/jomeke/TripleX 4.25/Source/BullCowGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BullCowGameEditor",
+			"Path": "/Users/jomeke/TripleX 4.25/Source/BullCowGameEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

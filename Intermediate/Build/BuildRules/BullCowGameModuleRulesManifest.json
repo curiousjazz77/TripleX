@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/jomeke/TripleX 4.25/Source/BullCowGame/BullCowGame.Build.cs",
+		"/Users/jomeke/TripleX 4.25/Source/BullCowGame.Target.cs",
+		"/Users/jomeke/TripleX 4.25/Source/BullCowGameEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.3"
+}

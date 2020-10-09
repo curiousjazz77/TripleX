@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"/Users/jomeke/TripleX 4.25/Saved": true,
+		"/Users/jomeke/TripleX 4.25/Content": true,
+		"/Users/jomeke/TripleX 4.25/DerivedDataCache": true,
+		"/Users/jomeke/TripleX 4.25/.git": true,
+		"/Users/jomeke/TripleX 4.25/.vscode": true,
+		"/Users/jomeke/TripleX 4.25/Intermediate": true,
+		"/Users/jomeke/TripleX 4.25/BullCowGame.xcworkspace": true
+	}
+}

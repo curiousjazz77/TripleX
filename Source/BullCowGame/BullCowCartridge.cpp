@@ -37,7 +37,7 @@ void UBullCowCartridge::InitGame() {
     PrintLine(TEXT("Guess the %i letter word!"), HiddenWord.Len());
     PrintLine(TEXT("You have %i lives."), Lives);
     PrintLine(TEXT("Type in your guess. \nPress enter to continue...."));
-    PrintLine(FString::Printf(TEXT("The hidden word is: %s"), *HiddenWord));
+    //PrintLine(FString::Printf(TEXT("The hidden word is: %s"), *HiddenWord));
     // const TCHAR HW[] = TEXT("cakes");
     // PrintLine(TEXT("Character 1 of the hidden word is: %c"), HiddenWord[0]);
     // PrintLine(TEXT("The 4th character of the Hidden Word is: %c"), HW[3]);
@@ -82,6 +82,9 @@ void UBullCowCartridge::ProcessGuess(const FString& Guess) {
             EndGame();
             return;
         }
+        int32 Bulls, Cows; // another sign we'll have out params; not initialized here
+        GetBullCows(Guess, Bulls, Cows);
+        PrintLine(TEXT("You have %i Bulls and %i Cows"), Bulls, Cows);
 
         //Show the player the bulls and cows
         PrintLine(TEXT("Guess again, you have %i lives left"), Lives);
@@ -124,4 +127,23 @@ TArray<FString> UBullCowCartridge::GetValidWords(const TArray<FString>& WordList
         }
     }
     return ValidWords;
+}
+
+void UBullCowCartridge::GetBullCows(const FString& Guess, int32& BullCount, int32& CowCount) const{
+    BullCount = 0;
+    CowCount = 0;
+
+    for (int32 GuessIndex = 0; GuessIndex < Guess.Len(); GuessIndex++){
+        if (Guess[GuessIndex] == HiddenWord[GuessIndex]){
+            BullCount ++;
+            continue;
+        }
+
+        for (int32 HiddenIndex = 0; HiddenIndex < HiddenWord.Len(); HiddenIndex++){
+            if (Guess[GuessIndex] == HiddenWord[GuessIndex]){
+                CowCount ++;
+                break;
+            }
+        }
+    }
 }

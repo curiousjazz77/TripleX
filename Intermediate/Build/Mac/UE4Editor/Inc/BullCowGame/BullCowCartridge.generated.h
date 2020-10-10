@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define BULLCOWGAME_BullCowCartridge_generated_h
 
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_SPARSE_DATA
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_RPC_WRAPPERS
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_INCLASS_NO_PURE_DECLS \
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_SPARSE_DATA
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_RPC_WRAPPERS
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUBullCowCartridge(); \
 	friend struct Z_Construct_UClass_UBullCowCartridge_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(UBullCowCartridge)
 
 
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_INCLASS \
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesUBullCowCartridge(); \
 	friend struct Z_Construct_UClass_UBullCowCartridge_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(UBullCowCartridge)
 
 
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_STANDARD_CONSTRUCTORS \
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBullCowCartridge(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBullCowCartridge) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_ENHANCED_CONSTRUCTORS \
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBullCowCartridge(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,28 +60,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBullCowCartridge); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBullCowCartridge)
 
 
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_PRIVATE_PROPERTY_OFFSET
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_9_PROLOG
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_GENERATED_BODY_LEGACY \
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_PRIVATE_PROPERTY_OFFSET
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_14_PROLOG
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_PRIVATE_PROPERTY_OFFSET \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_SPARSE_DATA \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_RPC_WRAPPERS \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_INCLASS \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_STANDARD_CONSTRUCTORS \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_PRIVATE_PROPERTY_OFFSET \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_SPARSE_DATA \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_RPC_WRAPPERS \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_INCLASS \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_GENERATED_BODY \
+#define TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_PRIVATE_PROPERTY_OFFSET \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_SPARSE_DATA \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_INCLASS_NO_PURE_DECLS \
-	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_12_ENHANCED_CONSTRUCTORS \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_PRIVATE_PROPERTY_OFFSET \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_SPARSE_DATA \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_INCLASS_NO_PURE_DECLS \
+	TripleX_4_25_Source_BullCowGame_BullCowCartridge_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

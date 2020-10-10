@@ -15,7 +15,7 @@ void UBullCowCartridge::BeginPlay() // When the game starts
 
  }
 
-void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
+void UBullCowCartridge::OnInput(const FString& PlayerInput) // When the player hits enter
 {
     //ClearScreen();
     //FString HiddenWord = TEXT("cake"); //TEXT is a macro
@@ -24,7 +24,7 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
         ClearScreen();
         InitGame();
     } else { //Checking Payer Guess
-        ProcessGuess(Input);
+        ProcessGuess(PlayerInput);
 }
 }
 
@@ -54,7 +54,7 @@ void UBullCowCartridge::EndGame() {
 
 }
 
-void UBullCowCartridge::ProcessGuess(FString Guess) {
+void UBullCowCartridge::ProcessGuess(const FString& Guess) {
         if (Guess == HiddenWord){
                 PrintLine(TEXT("You have Won!"));
                 EndGame();
@@ -91,7 +91,7 @@ void UBullCowCartridge::ProcessGuess(FString Guess) {
 
 }
 
-bool UBullCowCartridge::IsIsogram(FString Word) const {
+bool UBullCowCartridge::IsIsogram(const FString& Word) const {
     //For each letter
     // Start at element [0].
     // Compare against the next letter.
@@ -115,7 +115,7 @@ return true;
 }
 
 
-TArray<FString> UBullCowCartridge::GetValidWords(TArray<FString> WordList) const{
+TArray<FString> UBullCowCartridge::GetValidWords(const TArray<FString>& WordList) const{
 
     TArray<FString> ValidWords;
 

@@ -37,7 +37,7 @@ void UBullCowCartridge::InitGame() {
     PrintLine(TEXT("Guess the %i letter word!"), HiddenWord.Len());
     PrintLine(TEXT("You have %i lives."), Lives);
     PrintLine(TEXT("Type in your guess. \nPress enter to continue...."));
-    //PrintLine(FString::Printf(TEXT("The hidden word is: %s"), *HiddenWord));
+    PrintLine(FString::Printf(TEXT("The hidden word is: %s"), *HiddenWord));
     // const TCHAR HW[] = TEXT("cakes");
     // PrintLine(TEXT("Character 1 of the hidden word is: %c"), HiddenWord[0]);
     // PrintLine(TEXT("The 4th character of the Hidden Word is: %c"), HW[3]);

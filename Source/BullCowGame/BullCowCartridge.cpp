@@ -121,8 +121,8 @@ TArray<FString> UBullCowCartridge::GetValidWords(TArray<FString> WordList) const
 
     for (FString Word: WordList){ //range based query
 
-        if (Word[Index].Len() >= 4 && Word[Index].Len() <= 8 && IsIsogram(Word[Index])){
-            ValidWords.Emplace(Word[Index]); //we add that word to the valid words array
+        if (Word.Len() >= 4 && Word.Len() <= 8 && IsIsogram(Word)){
+            ValidWords.Emplace(Word); //we add that word to the valid words array
             //PrintLine(TEXT("%s"), *Words[Index]); //remember to dereference
         }
     }

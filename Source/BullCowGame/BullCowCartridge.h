@@ -25,5 +25,6 @@ class BULLCOWGAME_API UBullCowCartridge : public UCartridge
 	FString HiddenWord;
 	int32 Lives;
 	bool bGameOver;
+	TArray<FString> Isograms;
 	
 };

@@ -46,7 +46,7 @@ void UBullCowCartridge::InitGame() {
 
 void UBullCowCartridge::EndGame() {
     bGameOver = true;
-    PrintLine(TEXT("\nPress enter to play again"));
+    PrintLine(TEXT("\nPress enter to play again!"));
 
 }
 
@@ -59,7 +59,7 @@ void UBullCowCartridge::ProcessGuess(FString Guess) {
         
         //Check if Isogram
         if (!IsIsogram(Guess)){
-            PrintLine(TEXT("There are no repeating letters, guess again"));
+            PrintLine(TEXT("There are no repeating letters, guess again!"));
             return;
         }
         //Prompt to guess again
@@ -93,8 +93,18 @@ bool UBullCowCartridge::IsIsogram(FString Word) const {
     // Compare against the next letter.
     // Until we reach [Word.Len() -1]
     // if any are the same, return false.
+    // for (int32 Index = 0; Index < Word.Len(); Index++){
+    //     PrintLine(TEXT("%c"), Word[Index]);
+    // }
+    // int32 Index = 0;
+    // int32 Comparison = Index + 1;
     for (int32 Index = 0; Index < Word.Len(); Index++){
-        PrintLine(TEXT("%c"), Word[Index]);
+        for (int32 Comparison = Index + 1; Comparison < Word.Len(); Comparison++){
+            if (Word[Index] == Word[Comparison]){
+                return false;
+            }
+
+        }
     }
 
 return true;
